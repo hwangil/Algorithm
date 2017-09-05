@@ -1,9 +1,12 @@
 package dynmaic;
 
 import java.util.Scanner;
+// dp
+// https://algospot.com/judge/problem/read/ASYMTILING
 
 public class ASYMTILING {
 	static long[] dp;
+	static final int MOD = 1000000007;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -16,14 +19,13 @@ public class ASYMTILING {
 			long symTotal;
 			if(n%2 == 0){
 				initDp(n);
-				total = (total - new ASYMTILING().tiling(n/2, 0) + 1000000007)%1000000007;
+				total = (total - new ASYMTILING().tiling(n/2, 0) + MOD)%MOD;
 				initDp(n);
-				total = (total - new ASYMTILING().tiling(n/2-1, 0) + 1000000007)%1000000007;
+				total = (total - new ASYMTILING().tiling(n/2-1, 0) + MOD)%MOD;
 			}
-			
 			else{
 				initDp(n);
-				total = (total - new ASYMTILING().tiling(n/2, 0) + 1000000007)%1000000007;
+				total = (total - new ASYMTILING().tiling(n/2, 0) + MOD)%MOD;
 			}
 			System.out.println(total);
 		}
@@ -37,7 +39,7 @@ public class ASYMTILING {
 			return 1;
 		if(dp[index] != -1)
 			return dp[index];
-		return (dp[index] = (tiling(n, index+1) + tiling(n, index+2))%1000000007);
+		return (dp[index] = (tiling(n, index+1) + tiling(n, index+2))%MOD);
 	}
 	public static void initDp(int n){
 		for(int i=0; i<=n; i++)
