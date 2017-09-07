@@ -64,7 +64,8 @@ public class Main {
 			isVisited[select] = true;
 			System.out.print(select + " ");
 			for(int i=0; i<map.get(select).size(); i++){
-				list.add(map.get(select).get(i));
+				if(!isVisited[map.get(select).get(i)])
+					list.add(map.get(select).get(i));
 			}
 			list.sort(null);
 			for(int i=0; i<list.size(); i++)
