@@ -1,10 +1,11 @@
-package dfs;
+package etc;
 
 import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.Stack;
 
 // not dfs
+// https://www.acmicpc.net/problem/14503
 // 역시 문제를 잘 읽자
 
 public class Robot {
@@ -52,7 +53,7 @@ public class Robot {
 					break;
 				}
 			}
-			if(s.isEmpty()){
+			if(s.isEmpty()){			// 갈곳이 없으면 후진
 				if(map[select[0]+dir[direction][1][0]][select[1]+dir[direction][1][1]] != 1)
 					s.push(new int[]{select[0]+dir[direction][1][0], select[1]+dir[direction][1][1]});
 			}
