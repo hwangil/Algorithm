@@ -1,7 +1,9 @@
-package bfs;
+package dfs;
 
 import java.util.Scanner;
 import java.util.Stack;
+
+// https://www.acmicpc.net/problem/1012
 
 public class Cabbage {
 

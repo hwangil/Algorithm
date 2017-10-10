@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
+// https://www.acmicpc.net/problem/5558
 public class Cheese {
 
 	public static void main(String[] args) {
