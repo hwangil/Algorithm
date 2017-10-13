@@ -2,6 +2,9 @@ package dynmaic;
 
 import java.util.Scanner;
 
+// https://www.acmicpc.net/problem/2579
+// 틀린거임
+
 public class ClimbStair {
 	static int dp[][];
 	public static void main(String[] args) {
