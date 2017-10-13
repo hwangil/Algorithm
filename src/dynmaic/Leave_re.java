@@ -18,15 +18,12 @@ public class Leave_re {
 			t[i] = sc.nextInt();
 			p[i] = sc.nextInt();
 		}
-		
 		System.out.println(leave(0, t, p, n));
 	}
 	
 	private static int leave(int index, int[] t, int[] p, int n){
-		
 		if(index+t[index] > n+1)
 			return 0;
-		
 		if(dp[index] != -1)
 			return dp[index];
 		dp[index] = p[index];
