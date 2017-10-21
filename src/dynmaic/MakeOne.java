@@ -29,10 +29,8 @@ public class MakeOne {
 //		System.out.println(makeOne(n));
 	}
 	private static int makeOne(int n){
-		
 		if(n==1)
 			return 0;
-		
 		if(dp[n] != -1)
 			return dp[n];
 		
