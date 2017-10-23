@@ -2,6 +2,8 @@ package dynamic2;
 
 import java.util.Scanner;
 
+// https://www.acmicpc.net/problem/2011
+
 public class PasswordCord {
 	private static final int MOD = 1000000;
 	public static void main(String[] args){

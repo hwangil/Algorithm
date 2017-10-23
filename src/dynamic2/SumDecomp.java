@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 // https://www.acmicpc.net/problem/2225
-// 다시
+// *** 다시
 
 public class SumDecomp {
 	private static final int C = 1000000000;
