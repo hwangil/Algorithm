@@ -3,7 +3,7 @@ package dynamic3;
 import java.util.Scanner;
 
 // https://www.acmicpc.net/problem/5557
-// 새로운 dp유형
+// 새로운 dp유형 i think
 
 public class Grade1 {
 	public static void main(String[] args){

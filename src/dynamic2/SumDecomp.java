@@ -18,7 +18,7 @@ public class SumDecomp {
 		for(int i=0; i<=n; i++){
 			dp[i][1] = 1;
 		}
-		for(int i=2; i<=k; i++){
+		for(int i=2; i<=k; i++){	
 			for(int j=0; j<=n; j++){
 				for(int l=0; l<=j; l++){
 					dp[j][i] += dp[j-l][i-1];

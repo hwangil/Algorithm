@@ -14,7 +14,7 @@ public class ASYMTILING {
 		for(int t=0; t<testCase; t++){
 			int n = sc.nextInt();
 			dp = new long[n+1];
-			initDp(n);
+			initDp(n); 	
 			long total = (new ASYMTILING().tiling(n, 0));
 			long symTotal;
 			if(n%2 == 0){

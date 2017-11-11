@@ -23,6 +23,11 @@ public class PlumTree {
 					dp[j][i] += 1;
 			}
 		}
+		// 이게 맞다
+//		int answer = 0;
+//		for(int i=1; i<w+2; i++)
+//			answer = Math.max(answer, dp[i][t]);
+//		System.out.println(answer);
 		System.out.println(dp[w+1][t]);
 		
 	}

@@ -2,7 +2,7 @@ package dynmaic;
 
 import java.util.Scanner;
 
-// https://www.acmicpc.net/submit/2156
+// https://www.acmicpc.net/problem/2156
 // 1차원으로도 풀수 있음 
 
 public class Wine {
